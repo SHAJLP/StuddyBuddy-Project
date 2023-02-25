@@ -1,4 +1,5 @@
 const postId = document.querySelector('input[name="post-id"]').value;
+
 // edit form handler
 const editFormHandler = async (event) => {
   // prevent default
@@ -23,7 +24,8 @@ const editFormHandler = async (event) => {
       alert(response.statusText);
     }
   }
-  //delete post
+
+  // delete post function
   const deletePost = async (event) => {
     const response = await fetch(`/api/post/${postId}`, {
       method: "DELETE",
@@ -34,8 +36,10 @@ const editFormHandler = async (event) => {
       alert(response.statusText);
     }
   };
+
+  document.querySelector("#delete-post").addEventListener("click", deletePost);
 };
+
 document
   .querySelector("#edit-post-form")
   .addEventListener("submit", editFormHandler);
-document.querySelector("#delete-post").addEventListener("click", deletePost);

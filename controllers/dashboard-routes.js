@@ -12,23 +12,21 @@ router.get("/", withAuth, async (req, res) => {
   try {
     const postData = await Post.findAll({
       where: {
-        userId: req.session.user_id,
+        user_id: req.session.user_id,
       },
     });
     const posts = postData.map((post) => post.get({ plain: true }));
     res.render("all-posts-admin", {
-      layout: "dashboard",
       posts,
     });
   } catch (err) {
+    console.log(err);
     res.redirect("login");
   }
 });
 //new post
 router.get("/new", withAuth, (req, res) => {
-  res.render("new-post", {
-    layout: "dashboard",
-  });
+  res.render("new-post", {});
 });
 //edit post
 router.get("/edit/:id", withAuth, async (req, res) => {
@@ -37,7 +35,6 @@ router.get("/edit/:id", withAuth, async (req, res) => {
     if (postData) {
       const post = postData.get({ plain: true });
       res.render("edit-post", {
-        layout: "dashboard",
         post,
       });
     } else {
