@@ -14,5 +14,9 @@ router.use("/", homeRoutes);
 //use dashboard routes
 router.use("/dashboard", dashboardRoutes);
 
+router.use((req, res) => {
+  res.status(404).end();
+});
+
 //export
 module.exports = router;
