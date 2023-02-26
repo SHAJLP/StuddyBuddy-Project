@@ -3,7 +3,7 @@ const path = require("path");
 //require express
 const express = require("express");
 //require controllers
-const controllers = require("./controllers");
+const routes = require("./controllers");
 //require sequelize
 const sequelize = require("./config/connection");
 //require helpers
@@ -20,7 +20,7 @@ const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
 // session const
 const sess = {
-  secret: "process.env.DB_SECRET",
+  secret: process.env.DB_SECRET,
   cookie: {},
   resave: false,
   saveUninitialized: true,
