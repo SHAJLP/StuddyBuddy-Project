@@ -2,6 +2,45 @@ const router = require("express").Router();
 const { User, Post, Comment } = require("../../models");
 const withAuth = require("../../utils/auth");
 
+// Search for posts
+router.get("/search", (req, res) => {
+  const { query, category } = req.query;
+  const whereClause = {};
+
+  if (query) {
+    whereClause.content = { [Op.like]: `%${query}%` };
+  }
+
+  if (category) {
+    whereClause.category_id = category;
+  }
+
+  Post.findAll({
+    attributes: ["id", "content", "title", "category_id", "created_at"],
+    order: [["created_at", "DESC"]],
+    include: [
+      {
+        model: User,
+        attributes: ["username"],
+      },
+      {
+        model: Comment,
+        attributes: ["id", "comment_text", "post_id", "user_id", "created_at"],
+        include: {
+          model: User,
+          attributes: ["username"],
+        },
+      },
+    ],
+    where: whereClause,
+  })
+    .then((dbPostData) => res.json(dbPostData))
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+});
+
 // Get all posts
 router.get("/", (req, res) => {
   Post.findAll({
