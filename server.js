@@ -12,6 +12,8 @@ const helpers = require("./utils/helpers");
 const exphbs = require("express-handlebars");
 //handlebars
 const hbs = exphbs.create({ helpers });
+//require socket io
+const io = require ('socket.io')(http)
 
 //require session
 const session = require("express-session");
