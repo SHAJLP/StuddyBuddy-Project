@@ -23,7 +23,7 @@ Please clone repo, change .env.EXAMPLE, mysql and then node server.js to run
 To be used by coding students
 
 ## Contributors:
-Alstair, Sophia, Fadumo 
+Alstair, Sophia, Faduma
 
 
 ## Testing:
@@ -32,7 +32,7 @@ n/a
 
 ## Additional Info:
 
-- Github: [f](https://github.com/AlastairHafield), [f](https://github.com/SHAJLP), [f](https://github.com/FadumaD)
+- Github: [Alastair](https://github.com/AlastairHafield), [Sophia](https://github.com/SHAJLP), [Faduma](https://github.com/FadumaD)
 
 ## Questions and Contribution instructions:
 
