@@ -25,6 +25,27 @@ Post.init(
         len: [1],
       },
     },
+    category_id: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        notEmpty: true,
+        len: [1, 255],
+        isIn: [
+          [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Node.js",
+            "MySQL",
+            "MongoDB",
+            "Express.js",
+            "React.js",
+            "Other",
+          ],
+        ],
+      },
+    },
     user_id: {
       type: DataTypes.INTEGER,
       references: {
