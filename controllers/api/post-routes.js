@@ -8,7 +8,7 @@ router.get("/search", (req, res) => {
   const whereClause = {};
 
   if (query) {
-    whereClause.content = { [Op.like]: `%${query}%` };
+    whereClause.title = { [Op.like]: `%${query}%` };
   }
 
   if (category) {
@@ -34,7 +34,7 @@ router.get("/search", (req, res) => {
     ],
     where: whereClause,
   })
-    .then((dbPostData) => res.json(dbPostData))
+    .then((dbPostData) => res.render("search", dbPostData))
     .catch((err) => {
       console.log(err);
       res.status(500).json(err);

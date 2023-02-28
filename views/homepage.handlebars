@@ -8,14 +8,7 @@
     {{#each posts as |post|}}
     <li>
         {{> post-info post }}
-    </li>
-    {{/each}}
-</ul>
-
-<ul class="post-list">
-    {{#each posts as |post|}}
-    <li>
-        {{> post-info post }}
+        {{> comments post.comments}}
     </li>
     {{/each}}
 </ul>
