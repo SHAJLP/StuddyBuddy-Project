@@ -2,6 +2,7 @@ const router = require("express").Router();
 const sequelize = require("../config/connection");
 const { Op } = require("sequelize");
 const { User, Post, Comment } = require("../models");
+const withAuth = require("../utils/auth");
 
 router.get("/search", (req, res) => {
   const { query } = req.query;
@@ -50,7 +51,7 @@ router.get("/search", (req, res) => {
     });
 });
 
-router.get("/", (req, res) => {
+router.get("/", withAuth, (req, res) => {
   Post.findAll({
     attributes: ["id", "title", "content", "created_at"],
     include: [
