@@ -50,5 +50,6 @@ Please contact this email address with any questions about the project or if you
 ![license](https://img.shields.io/badge/license-MIT-blue)
 
 SCREENSHOTS
-![Screenshot 2023-03-02 at 20 35 26](https://user-images.githubusercontent.com/114526543/222549640-656e0ce6-bc1d-42cd-bd56-c3563fc6caf2.png)
+
+![Screenshot 2023-03-02 at 20 50 03](https://user-images.githubusercontent.com/114526543/222549882-3af317ac-33ba-42ec-8bac-7031ed7e6627.png)
 
