@@ -33,6 +33,7 @@ n/a
 ## Additional Info:
 
 - Github: [Alastair](https://github.com/AlastairHafield), [Sophia](https://github.com/SHAJLP), [Faduma](https://github.com/FadumaD)
+ Tecnologies used; Node.js, Express, Sequelizer, MYSQL, Discord.js, Bcrypt, Dotenv, Express-handlebars, I-frame, Express-sessions, Socket.io
 
 ## Questions and Contribution instructions:
 
