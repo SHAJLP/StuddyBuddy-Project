@@ -30,12 +30,18 @@ Alstair, Sophia, Faduma
 
 n/a
 
+
+ScreenShots:
+
+[![Screenshot 2023-03-02 at 20 35 26](https://user-images.githubusercontent.com/114526543/222546299-c3be1637-0967-4073-a461-d08e52f4d8e4.png)
+
+
 ## Additional Info:
 
 - Github: [Alastair](https://github.com/AlastairHafield), [Sophia](https://github.com/SHAJLP), [Faduma](https://github.com/FadumaD)
 
 
- Tecnologies used; Node.js, Express, Sequelizer, MYSQL, Discord.js, Bcrypt, Dotenv, Express-handlebars, I-frame, Express-sessions, Socket.io
+ Technologies used; Node.js, Express, Sequelizer, MYSQL, Discord.js, Bcrypt, Dotenv, Express-handlebars, I-frame, Express-sessions, Socket.io
  
 
 ## Questions and Contribution instructions:
