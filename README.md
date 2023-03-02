@@ -31,11 +31,6 @@ Alstair, Sophia, Faduma
 n/a
 
 
-ScreenShots:
-
-
-
-
 ## Additional Info:
 
 - Github: [Alastair](https://github.com/AlastairHafield), [Sophia](https://github.com/SHAJLP), [Faduma](https://github.com/FadumaD)
@@ -53,3 +48,7 @@ Please contact this email address with any questions about the project or if you
 ## Licensing:
 
 ![license](https://img.shields.io/badge/license-MIT-blue)
+
+SCREENSHOTS
+![Screenshot 2023-03-02 at 20 35 26](https://user-images.githubusercontent.com/114526543/222549640-656e0ce6-bc1d-42cd-bd56-c3563fc6caf2.png)
+
